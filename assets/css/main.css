@@ -136,11 +136,11 @@ body.before-load {
 }
 
 .description {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
   font-size: 1.2rem;
-  color: #888;
+  color: black;
 }
 
 .description strong {

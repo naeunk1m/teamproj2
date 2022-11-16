@@ -58,7 +58,7 @@
     {
       // 2
       type: "sticky",
-      heightNum: 5,
+      heightNum: 3,
       scrollHeight: 0,
       objs: {
         container: document.querySelector("#scroll-section-2"),
@@ -95,7 +95,6 @@
     {
       // 3
       type: "sticky",
-      heightNum: 5,
       scrollHeight: 0,
       objs: {
         container: document.querySelector("#scroll-section-3"),
@@ -124,15 +123,15 @@
     let imgElem;
     for (let i = 0; i < sceneInfo[0].values.videoImageCount; i++) {
       imgElem = document.createElement("img"); // === new Image();
-      imgElem.src = `assets/video/003/IMG_${6705 + i}-removebg-preview.jpg`;
+      imgElem.src = `../assets/video/003/IMG_${6705 + i}-removebg-preview.jpg`;
       sceneInfo[0].objs.videoImages.push(imgElem);
     }
 
     let imgElem2;
-    for (let i = 0; i < sceneInfo[2].values.videoImageCount; i++) {
+    for (let i = 0; i < sceneInfo[0].values.videoImageCount; i++) {
       imgElem2 = document.createElement("img"); // === new Image();
-      imgElem2.src = `assets/video/004/IMG_${6705 + i}-removebg-preview.jpg`;
-      sceneInfo[2].objs.videoImages.push(imgElem2);
+      imgElem2.src = `../assets/video/004/IMG_${6705 + i}-removebg-preview.jpg`;
+      sceneInfo[0].objs.videoImages.push(imgElem2);
     }
 
     let imgElem3;
